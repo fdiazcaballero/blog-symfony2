@@ -40,7 +40,10 @@ class LuckyController extends Controller
      */
     public function numberAction($count)
     {
-        // ...
+        $numbers = array();
+        for ($i = 0; $i < $count; $i++) {
+            $numbers[] = rand(0, 100);
+        }
         $numbersList = implode(', ', $numbers);
 
 //        $html = $this->container->get('templating')->render(

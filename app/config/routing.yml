@@ -5,3 +5,8 @@ app:
 lucky_number:
     path:     /lucky/number/{count}
     defaults: { _controller: AppBundle:Lucky:number }
+
+hello:
+    path:      /hello/{name}
+    # uses a special syntax to point to the controller - see note below
+    defaults:  { _controller: AppBundle:Hello:index }
