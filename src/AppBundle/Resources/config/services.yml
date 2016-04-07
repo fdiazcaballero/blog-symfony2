@@ -1,8 +1,0 @@
-# src/AppBundle/Resources/config/services.yml
-services:
-    app.form.type.task:
-        class: AppBundle\Form\Type\TaskType
-        arguments: ["@app.my_service"]
-        tags:
-            - { name: form.type }
-
